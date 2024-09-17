@@ -1,0 +1,1 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/71cbcb3f09ca032b47b0/maintainability)](https://codeclimate.com/github/maslievV/dorm-project/maintainability)
