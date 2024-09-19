@@ -1,24 +1,19 @@
 plugins {
     id("java")
-    id("application")
+    id("war")
     id("checkstyle")
     id("io.freefair.lombok") version "8.10"
 }
 
-group = "project.code"
+group = "webapp.code"
 version = "1.0-SNAPSHOT"
 
-application { mainClass.set("project.code.App") }
 
 repositories {
-    mavenCentral()
+    jcenter()
 }
 
 dependencies {
-    testImplementation(platform("org.junit:junit-bom:5.10.0"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
-}
-
-tasks.test {
-    useJUnitPlatform()
+    providedCompile ("javax.servlet:javax.servlet-api:3.1.0")
+    testImplementation ("junit:junit:4.13.1")
 }
